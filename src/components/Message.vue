@@ -23,7 +23,6 @@
 <style scoped>
   .message_row{
     margin-bottom: 12px;
-    background-color: red;
   }
   .message_contain{
     display: inline-block;

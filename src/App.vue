@@ -1,6 +1,6 @@
 <template>
   <!--  Message组件的使用-->
-  <Message text="这是一条提示信息" icon="check-circle-fill" icon-color="#1890FF"/>
+  <Message text="这是一条提示信息" icon="info-circle-fill" icon-color="#1890FF"/>
 
 </template>
 
