@@ -1,25 +1,30 @@
 <template>
-  <div class="message_contain">
-    <div class="message_box">
-      <Icon />
-      <div>{{text}}</div>
+  <div class="message_row">
+    <div class="message_contain">
+      <div class="message_box">
+        <icon-svg :icon-class="icon" class="test" :style="{color: iconColor}"/>
+        <div>{{text}}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import Icon from './Icon.vue'
-
+  import IconSvg from './IconSvg'
   export default {
-    props: ['text'],
+    props: ['text','icon','iconColor'],
     name: "Message",
     components: {
-      Icon
+       IconSvg
     }
   }
 </script>
 
 <style scoped>
+  .message_row{
+    margin-bottom: 12px;
+    background-color: red;
+  }
   .message_contain{
     display: inline-block;
     padding: 10px 14px;
@@ -34,5 +39,7 @@
     font-size: 14px;
     color: #333333;
   }
-
+  .test{
+    margin-right: 5px;
+  }
 </style>
